@@ -1,0 +1,17 @@
+.home {
+    margin-top: 80px;
+
+    .card__custom {
+        // width: 18rem;
+        height: 35rem !important;
+
+        .card__custom__img{
+            height: 400px !important;
+        }
+    }
+
+    min-height: calc(100vh - 210px);
+}
+
+
+

@@ -1,0 +1,128 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Bookworm API Documentation",
+        "contact": {
+            "email": "ngtrdai@hotmail.com"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/books": {
+            "get": {
+                "tags": [
+                    "Books"
+                ],
+                "summary": "Get list of books",
+                "description": "Returns list of books",
+                "operationId": "getBooksList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/books/{id}": {
+            "get": {
+                "tags": [
+                    "Books"
+                ],
+                "summary": "Get info book by id",
+                "description": "Returns info book by id",
+                "operationId": "getBookById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Book id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/books/onsale": {
+            "get": {
+                "tags": [
+                    "Books"
+                ],
+                "summary": "Get list of books on sale",
+                "description": "Returns list of books on sale",
+                "operationId": "getOnSale",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/books/featured/popular": {
+            "get": {
+                "tags": [
+                    "Books"
+                ],
+                "summary": "Get list of popular books",
+                "description": "Returns list of popular books",
+                "operationId": "getProductPopular",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/books/featured/recommended": {
+            "get": {
+                "tags": [
+                    "Books"
+                ],
+                "summary": "Get list of recommended books",
+                "description": "Returns list of recommended books",
+                "operationId": "getProductRecommended",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/order": {
+            "get": {
+                "tags": [
+                    "Order"
+                ],
+                "summary": "Get list/filter/sort of products",
+                "description": "Returns list/filter/sort of products",
+                "operationId": "getOrderList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        },
+        "/api/shop": {
+            "get": {
+                "tags": [
+                    "Shop"
+                ],
+                "summary": "Get list/filter/sort of products",
+                "description": "Returns list/filter/sort of products",
+                "operationId": "getListShopByFilteringAndSorting",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    }
+                }
+            }
+        }
+    }
+}
